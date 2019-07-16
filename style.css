@@ -109,25 +109,13 @@ html {
   border-radius: 0.5rem;
   width: 350px;
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
+  max-height: 250px;
+  overflow-y: scroll;
 }
 
-.liked-quotes-container:after {
-  top: 100%;
-	left: 10%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.liked-quotes-container:after {
-	border-color: rgba(0,0,0,0);
-	border-top-color: var(--darkOverlay);
-	border-width: 10px;
-	margin-left: -10px;
+.liked-quotes-container::-webkit-scrollbar {
+    display: none;
 }
 
 .liked-quotes-container > p:first-of-type {
