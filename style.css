@@ -1,0 +1,183 @@
+body,
+html {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  background-image: url(https://source.unsplash.com/collection/827743/);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.09),
+             0px 8px 13px rgba(0,0,0,0.09),
+             0px 18px 23px rgba(0,0,0,0.09);
+}
+
+:root {
+  --darkOverlay: rgba(15, 15, 15, 0.925);
+  --grey: #4f4f51;
+  --lightGrey: #bfc4cc;
+}
+
+*:focus {
+  outline: none;
+}
+
+.daily-quote{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quote {
+  font-size: 1.8rem;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.quote-additional, .fa-twitter {
+  color:  rgba(237, 237, 237, 0.9);
+  text-align: center;
+}
+
+.author {
+  font-size: 1.2rem;
+}
+
+.like:hover, .fa-twitter:hover, .refresh:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.liked {
+  color: white;
+}
+
+.liked:hover {
+  cursor: pointer;
+}
+
+.liked-quotes {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.liked-quotes:hover {
+  cursor: pointer;
+  background-color: rgba(79, 79, 81, 0.5);
+  color: white;
+}
+
+.liked-quotes > i::before {
+  position: relative;
+  bottom: 7px;
+  right: 2px;
+}
+
+.quote-additional {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.quote-additional * {
+  padding: 2px;
+}
+
+.liked-quotes-container {
+  background-color: var(--darkOverlay);
+  display: none;
+  padding: 20px;
+  border-radius: 0.5rem;
+  width: 350px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.liked-quotes-container:after {
+  top: 100%;
+	left: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.liked-quotes-container:after {
+	border-color: rgba(0,0,0,0);
+	border-top-color: var(--darkOverlay);
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.liked-quotes-container > p:first-of-type {
+  text-transform: uppercase;
+}
+
+.liked-quote > span {
+  color: rgba(237, 237, 237, 0.9);
+  font-size: 0.8rem;
+}
+
+.liked-quotes-container > hr {
+  margin-top: 15px;
+  color: var(--grey);
+  border: 0.5px solid var(--grey);
+}
+
+.liked-quote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.liked-quote > i {
+  font-size: 0.7rem;
+}
+
+.liked-quotes-container p:first-of-type {
+  margin-top: auto;
+}
+
+.ellipsis {
+  font-size: 1.1rem;
+  width: 20px;
+  vertical-align: top;
+  position:relative;
+  top: 5px;
+  z-index: 1;
+}
+
+.refresh {
+  background-color: transparent;
+  color: rgba(237, 237, 237, 0.9);
+  border: none;
+}
+
+footer {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
