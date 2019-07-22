@@ -57,6 +57,7 @@ $(document).on('mouseout', '.daily-quote', function() {
     $('.quote-additional').css('display', 'none');
     $('.quote').css('transform', 'translateY(0px)');
     $('.quote-additional').css('transform', 'translateY(0px)');
+    $('.liked-quotes-container').fadeOut();
   });
 
 // View liked quotes
