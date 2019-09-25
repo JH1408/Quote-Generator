@@ -3,7 +3,7 @@
 ## Overview
 
 This app shows you inspirational quotes with dreamy background images.
-It is part of the FreeCodeCamp Front End Libraries Certification.
+It is part of the [FreeCodeCamp Front End Libraries Certification](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine).
 
 See the project in action [here](https://jh1408.github.io/Quote-Generator/).
 
