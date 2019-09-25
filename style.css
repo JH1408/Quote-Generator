@@ -53,36 +53,9 @@ html {
   font-size: 1.2rem;
 }
 
-.like:hover, .fa-twitter:hover, .refresh:hover {
+.fa-twitter:hover, .refresh:hover {
   color: white;
   cursor: pointer;
-}
-
-.liked {
-  color: white;
-}
-
-.liked:hover {
-  cursor: pointer;
-}
-
-.liked-quotes {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.liked-quotes:hover {
-  cursor: pointer;
-  background-color: rgba(79, 79, 81, 0.5);
-  color: white;
-}
-
-.liked-quotes > i::before {
-  position: relative;
-  bottom: 7px;
-  right: 2px;
 }
 
 .quote-additional {
@@ -100,59 +73,6 @@ html {
 
 .quote-additional * {
   padding: 2px;
-}
-
-.liked-quotes-container {
-  background-color: var(--darkOverlay);
-  display: none;
-  padding: 20px;
-  border-radius: 0.5rem;
-  width: 350px;
-  position: absolute;
-  bottom: 20px;
-  max-height: 250px;
-  overflow-y: scroll;
-}
-
-.liked-quotes-container::-webkit-scrollbar {
-    display: none;
-}
-
-.liked-quotes-container > p:first-of-type {
-  text-transform: uppercase;
-}
-
-.liked-quote > span {
-  color: rgba(237, 237, 237, 0.9);
-  font-size: 0.8rem;
-}
-
-.liked-quotes-container > hr {
-  margin-top: 15px;
-  color: var(--grey);
-  border: 0.5px solid var(--grey);
-}
-
-.liked-quote {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.liked-quote > i {
-  font-size: 0.7rem;
-}
-
-.liked-quotes-container p:first-of-type {
-  margin-top: auto;
-}
-
-.ellipsis {
-  font-size: 1.1rem;
-  width: 20px;
-  vertical-align: top;
-  position:relative;
-  top: 5px;
-  z-index: 1;
 }
 
 .refresh {
