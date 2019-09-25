@@ -20,6 +20,6 @@ It's as easy as this:
 - Open the index.html file in your browser
 
 ## Tech stack
-- html
+- HTML
 - CSS
 - jQuery
